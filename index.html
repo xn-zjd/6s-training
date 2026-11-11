@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>正佳达精密制造 · 新员工入职培训（6S 与企业文化）</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%231D4E89'/><text x='12' y='17' font-size='13' font-weight='bold' text-anchor='middle' fill='%23FFC400'>6S</text></svg>">
+<style>
+  :root{
+    --blue:#1D4E89; --blue-dark:#123A66; --yellow:#FFC400;
+    --bg:#F2F5F9; --ink:#1C2733; --muted:#5A6B7B; --card:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;
+    font-size:16px;-webkit-text-size-adjust:100%}
+
+  /* ===== 顶部海报区（手机优先） ===== */
+  .hero{background:linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 70%, #2F80B8 100%);
+    padding:56px 20px 44px;text-align:center}
+  .hero h1{color:#fff;font-size:30px;letter-spacing:4px;line-height:1.4;font-weight:800}
+  .hero h1 em{font-style:normal;color:var(--yellow)}
+  .hero p{color:rgba(255,255,255,.9);margin:16px auto 0;max-width:32em;font-size:16px;text-align:justify}
+  .hero .slogan{display:inline-block;margin-top:20px;background:var(--yellow);color:var(--blue-dark);
+    font-weight:bold;padding:9px 20px;border-radius:24px;font-size:16px;letter-spacing:2px}
+
+  main{max-width:640px;margin:0 auto;padding:24px 16px 48px}
+
+  /* ===== 横幅 ===== */
+  .banner{background:var(--blue-dark);border-radius:14px;padding:22px 18px;text-align:center}
+  .banner h2{color:var(--yellow);font-size:20px;letter-spacing:3px;margin-bottom:8px}
+  .banner p{color:#fff;font-size:16px;font-weight:bold;letter-spacing:1px}
+  .guide{margin-bottom:24px}
+
+  /* ===== 分部标题 ===== */
+  .culture-title{text-align:center;font-size:22px;color:var(--blue-dark);letter-spacing:2px;margin-top:8px}
+  .culture-sub{text-align:center;color:var(--muted);font-size:14.5px;margin:6px 0 16px}
+
+  /* ===== 公司介绍卡（手机单列） ===== */
+  .cul-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:14px}
+  .cul-card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(18,58,102,.07)}
+  .cul-card p{font-size:15.5px;color:var(--muted);margin-top:10px}
+  .cul-head{display:inline-block;background:var(--blue);color:#fff;font-size:15px;font-weight:bold;
+    padding:4px 16px;border-radius:6px;letter-spacing:2px}
+
+  .cul-values{margin-top:14px;display:grid;grid-template-columns:repeat(1,1fr);gap:10px}
+  .cul-values div{background:var(--blue-dark);color:#fff;border-radius:12px;padding:16px;text-align:center;
+    display:flex;flex-direction:column;gap:6px}
+  .cul-values strong{color:var(--yellow);font-size:17px;letter-spacing:4px}
+  .cul-values span{font-size:15px}
+
+  /* ===== 6S 海报卡（手机单列） ===== */
+  .grid{display:grid;grid-template-columns:repeat(1,1fr);gap:16px}
+  .card{background:var(--card);border-radius:14px;overflow:hidden;
+    box-shadow:0 2px 10px rgba(18,58,102,.08);display:flex;flex-direction:column}
+  .card .top{color:#fff;padding:16px 18px 14px;display:flex;align-items:baseline;gap:10px}
+  .card .num{font-size:34px;font-weight:800;opacity:.45;line-height:1}
+  .card .name{font-size:24px;font-weight:bold;letter-spacing:3px}
+  .card .en{font-size:12px;opacity:.75;letter-spacing:1px}
+  .card .body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column;gap:10px}
+  .card .body>p{font-size:15.5px;color:var(--muted)}
+  .card ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15.5px}
+  .card li{padding-left:18px;position:relative}
+  .card li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:2px}
+  .card .do{margin-top:2px;background:#EEF3FA;border-left:4px solid;padding:10px 12px;font-size:15px;color:var(--ink);border-radius:0 8px 8px 0}
+
+  .c1 .top{background:#1D4E89}.c1 li::before{background:#1D4E89}.c1 .do{border-color:#1D4E89}
+  .c2 .top{background:#2264A8}.c2 li::before{background:#2264A8}.c2 .do{border-color:#2264A8}
+  .c3 .top{background:#2F80B8}.c3 li::before{background:#2F80B8}.c3 .do{border-color:#2F80B8}
+  .c4 .top{background:#3E97C4}.c4 li::before{background:#3E97C4}.c4 .do{border-color:#3E97C4}
+  .c5 .top{background:#B8860B}.c5 li::before{background:#B8860B}.c5 .do{border-color:#B8860B}
+  .c6 .top{background:#123A66}.c6 li::before{background:#123A66}.c6 .do{border-color:#123A66}
+
+  .gap{margin-top:28px}
+
+  footer{text-align:center;color:var(--muted);font-size:13.5px;padding:20px 16px 36px}
+
+  /* ===== 宽屏适配（电脑上同样好看） ===== */
+  @media (min-width:760px){
+    .hero{padding:80px 24px 64px;text-align:left}
+    .hero p{text-align:left}
+    main{max-width:1100px;padding:36px 20px 60px}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .cul-grid{grid-template-columns:repeat(2,1fr)}
+    .cul-values{grid-template-columns:repeat(3,1fr)}
+    .hero h1{font-size:44px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>新员工入职培训<br><em>6S</em> 与企业文化</h1>
+  <p>欢迎加入正佳达大家庭！这一页是你入职的第一课：先认识公司，再学会 6S 现场管理。内容不长，认真看完，就能快速融入车间工作。</p>
+  <span class="slogan">第一课 · 认识公司 · 学会6S</span>
+</header>
+
+<main>
+  <div class="banner guide">
+    <h2>学习指引</h2>
+    <p>先看公司是谁 → 再记住6S六个字 → 对照车间做到位</p>
+  </div>
+
+  <!-- ===== 第一部分 企业文化 ===== -->
+  <section class="culture">
+    <h2 class="culture-title">第一部分 · 认识我们的公司</h2>
+    <p class="culture-sub">正佳达精密制造有限公司 · 你未来的工作舞台</p>
+
+    <div class="cul-grid">
+      <div class="cul-card">
+        <div class="cul-head">公司简介</div>
+        <p>浙江正佳达精密制造有限公司（原名正达弹簧）成立于 1999 年 5 月，注册地柳市镇。主营断路器弹簧、接触器弹簧、控制电器弹簧、气动液压弹簧等，是浙江正泰电器股份有限公司弹簧类零部件的核心供应商。</p>
+      </div>
+      <div class="cul-card">
+        <div class="cul-head">企业实力</div>
+        <p>厂房 10000+ ㎡，全自动电脑弹簧机 280+ 台，半自动弹簧机 100+ 台，铁芯组件自动装配机 37 台，逐步实现自动化生产，对产能与品质持续升级。</p>
+      </div>
+      <div class="cul-card">
+        <div class="cul-head">品质承诺</div>
+        <p>通过 ISO9001-2015、IATF16949-2016、ISO13485-2016 质量体系认证，以最专业、最优质、最前沿为追求，为每一颗弹簧负责。</p>
+      </div>
+      <div class="cul-card">
+        <div class="cul-head">绿色低碳</div>
+        <p>推行清洁生产与节能改造，践行绿色制造；单位产值碳排放持续下降，与客户携手迈向绿色产品新时代。</p>
+      </div>
+    </div>
+
+    <div class="cul-values">
+      <div><strong>使 命</strong><span>做好每一颗弹簧，支撑电器可靠运行</span></div>
+      <div><strong>愿 景</strong><span>成为最专业、最优质、最前沿的精密弹簧制造企业</span></div>
+      <div><strong>价值观</strong><span>品质为本 · 持续改进 · 绿色发展 · 不忘初心</span></div>
+    </div>
+  </section>
+
+  <!-- ===== 第二部分 6S ===== -->
+  <h2 class="culture-title gap">第二部分 · 6S 现场管理</h2>
+  <p class="culture-sub">这是每位员工每天的必修课，车间检查、转正考核都从这里出题</p>
+
+  <div class="grid">
+
+    <section class="card c1">
+      <div class="top"><span class="num">1</span><span class="name">整 理</span><span class="en">SEIRI</span></div>
+      <div class="body">
+        <p>区分"要"与"不要"，把不需要的东西清出现场。</p>
+        <ul>
+          <li>工作台只留当班要用的物品</li>
+          <li>报废、闲置工具及时申报处理</li>
+          <li>私人物品放入指定柜子</li>
+        </ul>
+        <div class="do">口诀：要的留下，不要的清走</div>
+      </div>
+    </section>
+
+    <section class="card c2">
+      <div class="top"><span class="num">2</span><span class="name">整 顿</span><span class="en">SEITON</span></div>
+      <div class="body">
+        <p>定置定位、标识清晰，30 秒内找到任何东西。</p>
+        <ul>
+          <li>工具、物料按定置图摆放</li>
+          <li>用完归位，不随手乱放</li>
+          <li>标签朝外，先进先出</li>
+        </ul>
+        <div class="do">口诀：物有其位，物归其位</div>
+      </div>
+    </section>
+
+    <section class="card c3">
+      <div class="top"><span class="num">3</span><span class="name">清 扫</span><span class="en">SEISO</span></div>
+      <div class="body">
+        <p>扫除灰尘油污，边干边扫，不让脏污积累。</p>
+        <ul>
+          <li>班前班后各清扫一次设备</li>
+          <li>漏油、漏水立即报告处理</li>
+          <li>垃圾按分类投入指定桶</li>
+        </ul>
+        <div class="do">口诀：边干边扫，随手清洁</div>
+      </div>
+    </section>
+
+    <section class="card c4">
+      <div class="top"><span class="num">4</span><span class="name">清 洁</span><span class="en">SEIKETSU</span></div>
+      <div class="body">
+        <p>把整理、整顿、清扫的成果保持住、标准化。</p>
+        <ul>
+          <li>按点检表每日确认执行</li>
+          <li>清洁责任区落实到人</li>
+          <li>发现异常及时挂牌上报</li>
+        </ul>
+        <div class="do">口诀：标准上墙，责任到人</div>
+      </div>
+    </section>
+
+    <section class="card c5">
+      <div class="top"><span class="num">5</span><span class="name">素 养</span><span class="en">SHITSUKE</span></div>
+      <div class="body">
+        <p>养成好习惯，自觉遵守制度，不靠督促。</p>
+        <ul>
+          <li>按规定穿戴劳保用品</li>
+          <li>遵守操作规程，不图省事</li>
+          <li>互相提醒，共同进步</li>
+        </ul>
+        <div class="do">口诀：习惯成自然，制度记心间</div>
+      </div>
+    </section>
+
+    <section class="card c6">
+      <div class="top"><span class="num">6</span><span class="name">安 全</span><span class="en">SAFETY</span></div>
+      <div class="body">
+        <p>安全是 6S 的底线，一切工作以安全为前提。</p>
+        <ul>
+          <li>上岗前检查设备防护装置</li>
+          <li>遵守安全操作规程，杜绝"三违"</li>
+          <li>发现隐患立即上报</li>
+        </ul>
+        <div class="do">口诀：安全无小事，隐患即事故</div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="banner gap">
+    <h2>6S 一分钟口诀</h2>
+    <p>整理整顿清扫先，清洁素养记心间，安全天天挂嘴边</p>
+  </div>
+</main>
+
+<footer>正佳达精密制造有限公司 · 新员工入职培训 · 6S 与企业文化学习页</footer>
+
+</body>
+</html>
